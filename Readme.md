@@ -1,11 +1,11 @@
 # Clone The Repository
 ```shell
-git clone https://github.com/fossbalaji/megaassignment.git
+git clone https://github.com/fossbalaji/3mega.git
 ```
 ## Enter into the working directory
 
 ```shell
-cd megaassignment
+cd 3mega
 ```
 ## Install the requirements
 ```shell
