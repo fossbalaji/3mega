@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="container">
+        <h1>Summary</h1>
+
+          <a href="/summary"><button type="button" class="btn btn-primary">Sum</button></a>
+          <a href="/summary-average"><button type="button" class="btn btn-primary active">Average</button></a>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <td><strong>Site</strong></td>
+                    <td><strong>A Value</strong></td><td><strong>B Value</strong></td>
+                </tr>
+            </thead>
+                {% for item in summary %}
+                <tr>
+                    <td>{{ item.name }}</td>
+                    <td>{{ item.a_total }}</td>
+                    <td> {{ item.b_total }}</td>
+                </tr>
+                {% endfor %}
+
+        </table>
+    </div>
+{% endblock %}
